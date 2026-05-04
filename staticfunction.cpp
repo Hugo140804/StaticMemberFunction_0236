@@ -45,5 +45,15 @@ int main() {
     Mahasiswa mhs2("Budi Jatmiko");
 
     Mahasiswa::setNim(9);
-    Mahasiswa mhs3("Andi Janu")
-    Mahasiswa mhs4("Joko wahono") //memanggil static function setNim untuk memberikan nilai nim}
+    Mahasiswa mhs3("Andi Janu");
+    Mahasiswa mhs4("Joko wahono"); //memanggil static function setNim untuk memberikan nilai nim
+
+    mhs1.printAll();
+    mhs2.printAll();        
+    mhs3.printAll();
+    mhs4.printAll();
+
+    cout <<"Akses dari luar object = " << Mahasiswa::getNim() << endl; //memanggil static function getNim untuk menampilkan nilai nim
+    system("pause");
+    return 0;
+};
