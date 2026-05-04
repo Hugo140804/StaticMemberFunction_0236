@@ -40,3 +40,12 @@ void angka::cetakData()
         cin >> arr[i];
     }
  }
+
+ int main()
+{
+    angka belajarcoo(3);
+    angka *ptrBelajarcpp = new angka(5);
+    delete ptrBelajarcpp;
+    return 0;
+}
+ 
