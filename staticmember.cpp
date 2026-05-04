@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace
+using namespace std;
 
 class Mahasiswa { //membuat class mahasiswa
     
@@ -25,12 +25,14 @@ int Mahasiswa::nim = 10;
 
 void Mahasiswa::setID() { //prosedur setID untuk memberikan nilai id
     id = nim;
-};
-void Mahasiswa::printAll() { //prosed
+    nim++;
+}
+
+void Mahasiswa::printAll() { //prosedur printAll untuk menampilkan nilai
     cout << "ID: " << id << endl;
     cout << "Nama: " << nama << endl;
     cout << endl;
-};
+}
 
 int main () {
     Mahasiswa mhs1("Lia Kurnia");
