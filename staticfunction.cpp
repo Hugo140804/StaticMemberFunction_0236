@@ -28,3 +28,22 @@ public:
 };
 
 int Mahasiswa::nim = 0;
+
+//penderfinisial prosedur diluar class
+void Mahasiswa::setID() {
+    id = ++nim;
+}
+
+void Mahasiswa::printAll() {
+    cout << "ID: " << id << endl;
+    cout << "Nama: " << nama << endl;
+    cout << endl;
+}
+
+int main() {
+    Mahasiswa mhs1("Sri Dadi");
+    Mahasiswa mhs2("Budi Jatmiko");
+
+    Mahasiswa::setNim(9);
+    Mahasiswa mhs3("Andi Janu")
+    Mahasiswa mhs4("Joko wahono") //memanggil static function setNim untuk memberikan nilai nim}
