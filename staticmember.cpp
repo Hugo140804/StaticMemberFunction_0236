@@ -17,3 +17,15 @@ public:
     Mahasiswa(string pnama) :nama(pnama) {
         setID();
     }
+
+};
+
+//memberi value ke variabel nim dari calss Mahasiswa
+int Mahasiswa::nim = 10;
+
+void Mahasiswa::setID() { //prosedur setID untuk memberikan nilai id
+    id = nim;
+};
+void Mahasiswa::printAll() { //prosed
+    cout << "ID: " << id << endl;
+    cout << "Nama: " << nama << endl;
